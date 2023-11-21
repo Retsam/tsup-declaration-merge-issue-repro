@@ -1,0 +1,17 @@
+{
+  "name": "declaration-merge-issue-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:tsup": "tsup lib/index.ts -d lib/distTsup --dts-only --clean",
+    "build:vanilla": "tsc -p lib/tsconfig.json",
+    "link-app": "cd app && npm install",
+    "postinstall": "npm run build:tsup && npm run build:vanilla && npm run link-app"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.2"
+  }
+}

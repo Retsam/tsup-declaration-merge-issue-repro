@@ -1,0 +1,11 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "libVanilla": "../lib/dist",
+    "libTsup": "../lib/distTsup"
+  },
+  "license": "ISC"
+}
